@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Organize Today!</title>
+    <!--import style sheet-->
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form method="POST" action="/attempt_login">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </div>
+        <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" name="password" , id="password" placeholder="password">
+        </div>
+        <div>
+            <input type="submit" value="login" id="login">
+        </div>
+    </form>
+    <p hidden id="message"></p>
+    <div>
+        <p>Not a member?<a href="registration">Sign up today!</a></p>
+    </div>
+    <div>
+        <p><a href="main">Home</a></p>
+    </div>
+
+</body>
+
+</html>

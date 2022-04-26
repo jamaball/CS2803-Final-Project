@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.category {
+    display: none;
+}
+
+#cat1:checked~#schoolEvent {
+    display: block;
+}
+
+#cat2:checked~#workEvent {
+    display: block;
+}
+
+#cat3:checked~#personalEvent {
+    display: block;
+}
