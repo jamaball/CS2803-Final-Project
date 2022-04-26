@@ -5,24 +5,31 @@
     <title>Add an Event</title>
     <!--import style sheet-->
     <link href="addEvent.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 
 <body>
+    <h1>
+        Add an Event to your schedule
+    </h1>
+    <h2>
+        Suggestion:
+    </h2>
+    <div id="activity"></div>
     <form method="post" action="/add_event">
         <h3>
             What is your event for?
         </h3>
-        <input type="radio" name="school" id="cat1"><label for="cat1">School</label><br>
-        <input type="radio" name="work" id="cat2"><label for="cat2">Work</label><br>
-        <input type="radio" name="personal" id="cat3"><label for="cat3">Personal</label>
+        <input type="radio" name="cat" id="cat1"><label for="cat1">School</label><br>
+        <input type="radio" name="cat" id="cat2"><label for="cat2">Work</label><br>
+        <input type="radio" name="cat" id="cat3"><label for="cat3">Personal</label>
         <div id="schoolEvent" class="category">
             <h3>
                 What type of assignment?
             </h3>
-            <input type="radio" name="" id="assign1" checked><br>
-            <input type="radio" name="test" id="test"><label for="'test">Test</label><br>
-            <input type="radio" name="quiz" id="quiz"><label for="quiz">Quiz</label><br>
-            <input type="radio" name="hw" id="hw"><label for="hw">Homework</label><br>
+            <input type="radio" name="assign" id="test"><label for="'test">Test</label><br>
+            <input type="radio" name="assign" id="quiz"><label for="quiz">Quiz</label><br>
+            <input type="radio" name="assign" id="hw"><label for="hw">Homework</label><br>
             <input type="number" name="percent" id="percent"><label for="percent">What percent of your grade?</label><br>
             <input type="date" name="due" id="due"><label for="due">Due Date</label><br>
         </div>
@@ -43,7 +50,7 @@
             </p><br>
             <input type="text" name="desc" id="desc" placeholder="Description">
         </div>
-        <input type="submit" value="addEvent" name="addEvent">
+        <input type="submit" value="Add Event" name="addEvent">
     </form>
 </body>
 

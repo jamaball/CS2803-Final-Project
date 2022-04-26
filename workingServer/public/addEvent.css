@@ -1,7 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #003049;
+    color: #FCBF49;
+    font-family: "Helvetica";
 }
 
 .category {
