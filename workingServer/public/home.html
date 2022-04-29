@@ -3,18 +3,27 @@
 
 <head>
     <title>
-        Home
+        Your Feed
     </title>
-    <script src="home.js"></script>
+    <link href="home.css" rel="stylesheet">
+    <script src="home.js" defer></script>
 </head>
 
 <body>
+    <div id="homepage">
+        <ul id="navbar">
+            <li class="navlist"><a href="home">Home</a></li>
+            <li class="navlist"><a href="main">Add To List</a></li>
+            <li class="navlist"><a href="activity">New Ideas</a></li>
+        </ul>
+        <div>
+            <h1> Today's Feed</h1>
+            <ul id="eventlist"></ul>
+            <button type="button" name="Refresh Feed" value="Refresh Feed" id="refresh">Refresh Feed </button>
 
-    <div>
-        <p>
-            Suggestions to Destress!
-        </p>
-        <div id="activity"></div>
+            <p id="events"></p>
+            <div id="activity"></div>
+        </div>
     </div>
 </body>
 

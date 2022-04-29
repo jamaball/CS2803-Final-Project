@@ -1,19 +1,3 @@
-.category {
-    display: none;
-}
-
-#cat1:checked~#schoolEvent {
-    display: block;
-}
-
-#cat2:checked~#workEvent {
-    display: block;
-}
-
-#cat3:checked~#personalEvent {
-    display: block;
-}
-
 body {
     background: linear-gradient(90deg, #C7C5F4, #776BCC);
 }
@@ -51,25 +35,6 @@ body {
     font-size: 14px;
     margin-top: 30px;
     padding: 16px 20px;
-    border-radius: 26px;
-    border: 1px solid #D4D3E8;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: #4C489D;
-    box-shadow: 0px 2px 2px #5C5696;
-    cursor: pointer;
-    transition: .2s;
-    text-align: center;
-}
-
-#addeventbutt {
-    background: #fff;
-    font-size: 14px;
-    margin-top: 10px;
-    padding: 15px;
     border-radius: 26px;
     border: 1px solid #D4D3E8;
     text-transform: uppercase;
@@ -142,11 +107,4 @@ li a:hover:not(.active) {
 #quote {
     max-width: 750px;
     margin: auto;
-}
-
-#mainfeed {
-    margin: auto;
-    font-family: 'Helvetica';
-    text-align: center;
-    padding: 15px;
 }

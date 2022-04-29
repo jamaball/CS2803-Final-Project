@@ -2,35 +2,44 @@
 <html>
 
 <head>
-    <title>Login</title>
+    <title>Register</title>
     <!--import style sheet-->
-    <link href="index.css" rel="stylesheet">
+    <link href="registration.css" rel="stylesheet">
     <script src="registration.js" defer></script>
 </head>
 
 <body>
-    <p>Please fill out the information below to register:</p>
-    <form method="post" action="/register">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
+    <div class="container">
+        <div class = "screen">
+            <div class="screen__content">
+                <h3 class="title">Please fill out the information below to register:</h3>
+                <form method="post" action="/register">
+                    <div>
+                        <input class="register__input" type="text" name="username" id="username" placeholder="username">
+                    </div>
+                    <div>
+                        <input class="register__input" type="password" name="password" id="password" placeholder="password">
+                    </div>
+                    <div>
+                        <input class ="register__input" type="password" name="confirm_password" id="confirm_password" placeholder="confirm password">
+                    </div>
+                    <div>
+                        <input class="button__text registration__submit" type="submit" value="Register" id="register">
+                    </div>
+                </form>
+                <p hidden id="message"></p>
+                <button onclick = "location.href = '/'" class="registration__submit" id="return__to__login" style = "margin-left: 0px">
+                    <p class = "registration__text"> Return to Login Page</p>
+                </button>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
         </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" placeholder="password">
-        </div>
-        <div>
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password">
-        </div>
-        <div>
-            <input type="submit" value="Register" id="register">
-        </div>
-    </form>
-
-    <p hidden id="message"></p>
-    <p><a href="/">Return to login page.</a></p>
-
+    </div>
 </body>
 
 </html>

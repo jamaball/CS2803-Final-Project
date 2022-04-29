@@ -2,35 +2,44 @@
 <html>
 
 <head>
-    <title>Organize Today!</title>
+    <title>Login</title>
     <!--import style sheet-->
     <link href="index.css" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <form method="POST" action="/attempt_login">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username" placeholder="username">
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form method="POST" action="/attempt_login">
+                    <h3 class="title">Welcome to trackr</h3>
+                    <div class="login__field">
+                        <i class="login__icon"></i>
+                        <input type="text" class="login__input" name="username" id="username" placeholder="username">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon"></i>
+                        <input type="password" name="password" , id="password" class="login__input" placeholder="Password">
+                    </div>
+                        <input class="button__text login__submit" type="submit" value="login" id="login">
+                </form>
+                <p hidden id="message"></p>
+                <button onclick = "location.href = 'registration'" class="registration__submit">
+                    <p class = "registration__text"> Sign up today</p>
+                </button>
+                <button onclick = "location.href = 'home'" class="registration__submit">
+                    <p class = "registration__text"> Go to Home Page</p>
+                </button>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
         </div>
-        <div class="password">
-            <label for="password">Password:</label>
-            <input type="password" name="password" , id="password" placeholder="password">
-        </div>
-        <div>
-            <input type="submit" value="login" id="login">
-        </div>
-    </form>
-    <p hidden id="message"></p>
-    <div>
-        <p>Not a member?<a href="registration">Sign up today!</a></p>
     </div>
-    <div>
-        <p><a href="home">Home</a></p>
-        <p><a href="main">Main Page</a></p>
-    </div>
-
 </body>
 
 </html>
