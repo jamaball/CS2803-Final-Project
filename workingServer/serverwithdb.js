@@ -114,7 +114,7 @@ app.post("/add_event", function(req, res) {
                         console.log(rows)
                         res.json({ success: false, message: "server error" })
                     } else {
-                        res.json({ success: true, messsage: "event added" })
+                        res.sendFile(__dirname + "/public/" + "home.html");
                     }
                 })
                 // If userdata has an entry already, pull and add event
